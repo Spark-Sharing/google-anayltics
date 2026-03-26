@@ -4,7 +4,7 @@
 
 // --- Google Analytics Placeholder ---
 // Replace 'G-XXXXXXXXXX' with your actual GA4 Measurement ID
-const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+const GA_MEASUREMENT_ID = 'G-5WHX1FGVEY';
 
 // Initialize Data Layer
 window.dataLayer = window.dataLayer || [];
@@ -13,7 +13,7 @@ function gtag() {
 }
 
 // Load GA Script
-if (GA_MEASUREMENT_ID !== 'G-XXXXXXXXXX') {
+if (GA_MEASUREMENT_ID !== 'G-5WHX1FGVEY') {
     const script = document.createElement('script');
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
@@ -29,7 +29,7 @@ if (GA_MEASUREMENT_ID !== 'G-XXXXXXXXXX') {
  * Event Tracking Helper
  */
 function trackEvent(eventName, params = {}) {
-    if (GA_MEASUREMENT_ID !== 'G-XXXXXXXXXX') {
+    if (GA_MEASUREMENT_ID !== 'G-5WHX1FGVEY') {
         gtag('event', eventName, params);
     }
     console.log(`[Analytics Event] ${eventName}:`, params);
